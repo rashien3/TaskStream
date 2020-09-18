@@ -39,6 +39,12 @@ public class Main {
         return count;
     }
 
+    public static void printDataUsingStreams(ArrayList<Task> tasksData) {
+        System.out.println("printing using streams...");
+        tasksData.stream()
+                .forEach(System.out::println);
+    }
+
     public static void printData(ArrayList<Task> tasksData) {
         for (Task t : tasksData) {
             System.out.println(t);
